@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:id="@+id/postHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/postProfileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/postUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama user"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/status_image1" />
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ini postingan hari ini"/>
+
+</LinearLayout>
